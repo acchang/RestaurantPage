@@ -1,0 +1,150 @@
+
+body {
+    background: 
+    url("images/manycubes.jpg");
+            /* rgb(78, 75, 75)  */
+    /* #F8FFE5; */
+  }
+  
+  .perspective {
+  perspective: 76em;
+  perspective-origin: 50% 50px;
+  width: 868px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  color: #fff;
+  text-align: center;
+  }
+  
+  input {
+  display: none;
+  }
+  
+  .tab {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: pink;
+  right: 0;
+  line-height: 70px;
+  font-weight: 300;
+  }
+  .tab:nth-child(1) {
+  top: 90px;
+  background: rgb(78, 20, 78);
+    /* #516963; */
+  }
+  .tab:nth-child(2) {
+  top: 204px;
+  background: rgb(92, 41, 92)
+    /* #1B9AAA; */
+  }
+  .tab:nth-child(3) {
+  top: 318px;
+  background: rgb(48, 3, 48);
+    /* #EF476F; */
+  }
+  
+  .cube {
+  position: relative;
+  margin: 60px auto 0;
+  width: 500px;
+  height: 500px;
+  transform-origin: 0 250px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in;
+  }
+  
+  .tab-content {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  }
+  .tab-content h1 {
+  font-size: 5em;
+  margin: 15px 0 15px;
+  font-weight: 300;
+  font-family: 'Monofett', cursive;
+  }
+  .tab-content p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  }
+  .tab-content:nth-child(1) {
+  transform: rotateX(-270deg) translateY(-250px);
+  transform-origin: top left;
+  background:rgb(78, 20, 78);
+    /* #06D6A0; */
+  }
+  .tab-content:nth-child(2) {
+    transform: translateZ(250px);
+    background: 
+      rgb(92, 41, 92);
+      /* #1B9AAA; */
+  }
+  .tab-content:nth-child(3) {
+  transform: rotateX(-90deg) translateY(250px);
+  transform-origin: bottom center;
+  background:  rgb(48, 3, 48);
+  /* #EF476F; */
+  }
+  
+  #tab-menu:checked ~ .cube {
+  transform: rotateX(-90deg);
+  }
+  
+  #tab-home:checked ~ .cube {
+  transform: rotateX(0deg);
+  }
+  
+  #tab-visit:checked ~ .cube {
+  transform: rotateX(90deg);
+  }
+  
+  #locationmap {
+  margin: 0px auto 10px;
+  border: 2px;
+  width: 496px;
+  height: 200px;
+  }
+  
+  .tab {
+  font-size: 2em;
+  }
+  
+  .header {
+  font-size: 5em;
+  }
+  
+  .monofett {
+  font-family: 'Monofett', cursive;
+  }
+  
+  #home-intro {
+  justify-content: center;
+  line-height: 32px;
+  }
+  
+  #contact-info {
+  justify-content: center;
+  line-height: 20px;
+  width: 500px;
+  height: 150px;
+  }
+  
+  #brownie {
+  filter: blur(1px); 
+  width: 100%; 
+  }
+  
+  .hero {
+  background-image: url("images/choco-cubes.png");
+  width: 500px;
+  height: 150px;
+  }
