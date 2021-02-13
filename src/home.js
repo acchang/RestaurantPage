@@ -1,12 +1,16 @@
+function loadHome() {
+    var homeTab = document.createElement('div');
+    homeTab.classList.add('tab-content');
+    homeTab.id = 'homeTab';
+    document.getElementById('cube').appendChild(homeTab);
+    
+    var homeItem = document.createElement('h1');
+    homeItem.innerHTML = 'SPLASH HOME';
+    document.getElementById('homeTab').appendChild(homeItem)
+    }
 
+export default loadHome;
 
-
-    function loadHome() {
-        alert("Home Is Loaded")
-        console.log("Home Home")
-        }
-
-        export default loadHome;
 
 // function homeSplash() {
 //     const homeTabContent = document.createElement("div");

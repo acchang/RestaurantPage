@@ -1,10 +1,7 @@
-
-
-
-// import loadPage from './modules/initial-page-load';
 import chiefDiv from './persp';
-// import loadMenu from './modules/menu';
-// import loadContact from './modules/contact';
+import loadMenu from './menu';
+import loadHome from './home';
+import loadVisit from './visit';
 
 init();
 
@@ -19,8 +16,10 @@ init();
 // }
 
 function init() {
-//   loadPage();
     chiefDiv();
+    loadMenu();
+    loadHome();
+    loadVisit();
 //   addNavEvents();
 }
 
