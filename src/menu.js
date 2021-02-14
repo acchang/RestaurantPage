@@ -83,9 +83,9 @@ function loadMenu() {
     document.getElementById('cube').appendChild(menuTab);
     
     var menuItem = document.createElement('h1');
-    menuItem.innerHTML = 'MENU 22';
+    menuItem.innerHTML = 'MENU';
     document.getElementById('menuTab').appendChild(menuItem)
-    }
+    };
 
 export default loadMenu;
 
